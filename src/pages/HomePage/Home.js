@@ -1,16 +1,9 @@
 import React from 'react'
 import Header from '../../components/Header/Header'
-import MainContent from '../../components/MainContent/MainContent'
-import Footer from '../../components/Footer/Footer'
 import HeroSection from '../../components/HeroSection'
 import './_home.scss'
 
 
-/* import AliceCarousel from 'react-alice-carousel';
-import "react-alice-carousel/lib/alice-carousel.css";
-import img1 from './img/img1.jpg'
-import img2 from './img/img2.jpg'
-import img3 from './img/img3.jpg' */
 
 
 
@@ -18,14 +11,13 @@ const Home = () => {
         return (
             <div>
                 <Header />
-                {/* <AliceCarousel autoPlay autoPlayInterval="3000">
-                    <img src={img1} className="sliderimg" alt=""/>
-                    <img src={img2} className="sliderimg" alt=""/>
-                    <img src={img3} className="sliderimg" alt=""/>
-                </AliceCarousel> */}
                 <HeroSection />
-                <MainContent />
-                <Footer />
+                <div className="aboutUs">
+                    <div className="aboutUseContent">
+                        <h2>About Gurella Force</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                    </div>
+                </div>
             </div>
             
 
